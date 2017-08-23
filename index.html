@@ -36,7 +36,27 @@
 							</form>
 						</section>
 					</li>
-					<li class="login-link"><a href="#">Вход</a></li>
+					<li class="login-link">
+						<a href="#">Вход</a>
+						<section class="popap-login">
+							<h2 class="visually-hidden">Форма входа</h2>
+							<form class="login-form" action="" method="post">
+								<label class="visually-hidden" for="login-email">Электронная почта</label>
+								<input id="login-email" type="email" name="login" placeholder="Электронная почта">
+								<label class="vissually-hidden" for="login-password">Пароль</label>
+								<input id="login-password" type="password" name="password" placeholder="Пароль">
+								<button class="button login-button" type="submit">Войти</button>
+								<ul class="login-list">
+									<li class="login-item">
+										<a href="#">Забыли пароль?</a>
+									</li>
+									<li class="login-item">
+										<a href="#">Новая регистрация</a>
+									</li>
+								</ul>
+							</form>
+						</section>
+					</li>
 					<li class="basket"></li>
 				</ul>
 			</nav>
