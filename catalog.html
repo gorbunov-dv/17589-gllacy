@@ -87,7 +87,7 @@
 				<p> 8 812 450-25-25</p>
 			</div>
 		</header>
-		
+
 		<main class="container">
 			<ul class="breadcrumbs">
 				<li><a href="index.html">Главная</a></li>
@@ -226,27 +226,52 @@
 				</ul>
 			</section>
 		</main>
-		<footer>
-			<section class="social">
+		
+		<footer class="main-footer container">
+			<div class="footer-social">
+				<h3 class="visually-hidden">Магазин Глейси в социальных сетях</h3>
 				<ul>
-					<li><a href="#">tw</a></li>
-					<li><a href="#">in</a></li>
-					<li><a href="#">f</a></li>
-					<li><a href="#">vk</a></li>
+					<li><a class="social-button social-button-tw" href="#">Твиттер</a></li>
+					<li><a class="social-button social-button-ig" href="#">Инстаграм</a></li>
+					<li><a class="social-button social-button-fb" href="#">Фейсбук</a></li>
+					<li><a class="social-button social-button-vk" href="#">Вконтакте</a></li>
 				</ul>
-			</section>
-			<section class="links">
-				<ul>
-					<li>Для поставщиков</li>
-					<li>О производстве</li>
-					<li>Наши документы</li>
-					<li>Экологические стандарты</li>
+			</div>
+			<div class="footer-info">
+				<h3 class="visually-hidden">Информация</h3>
+				<ul class="footer-info-list">
+					<li class="footer-info-item"><a href="#">Для поставщиков</a></li>
+					<li class="footer-info-item"><a href="#">О производстве</a></li>
+					<li class="footer-info-item"><a href="#">Наши документы</a></li>
+					<li class="footer-info-item"><a href="#">Экологические продукты</a></li>
 				</ul>
-			</section>
-			<section class="copyrignt">
-				<img src="#" alt="logo">
-				<p>Сделано в HTML Academy © 2017</p>
-			</section>
+			</div>
+			<div class="footer-copyright">
+				<a class="logo-html-academy" href="https://htmlacademy.ru">
+					<img src="#" width="108" height="39" alt="Логотип HTML Academy">
+				</a>
+				Сделано в <a href="https://htmlacademy.ru">HTML Academy</a> &copy; 2017
+			</div>
 		</footer>
+
+		<section class="modal modal-feedback">
+			<button class="modal-close" type="button">Закрыть</button>
+			<h2 class="feedback-heading">Мы обязательно вам ответим!</h2>
+			<form class="feedback-form" action="index.html" method="post">
+				<p>
+					<label class="visually-hidden" for="feedback-name">Имя</label>
+					<input class="feedback-name" id="feedback-name" type="text" name="name" placeholder="Как вас зовут?">
+				</p>
+				<p>
+					<label class="visually-hidden" for="feedback-email">Электронная почта</label>
+					<input class="feedback-email" id="feedback-email" type="email" name="email" placeholder="Ваша почта для ответа?">
+				</p>
+				<p>
+					<label class="visually-hidden" for="feedback-textarea-text">Написать дополнительную информацию</label>
+					<textarea class="feedback-textarea-text" id="feedback-textarea-text" name="textarea-text" rows="8" cols="50" placeholder="Напишите что-нибудь..."></textarea>
+				</p>
+				<button class="button feedback-button" type="submit">Отправить</button>
+			</form>
+		</section>
 	</body>
 </html>
