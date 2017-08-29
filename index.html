@@ -180,25 +180,46 @@
 				<p>Доставка нашего мороженого до заказчиков осуществляется в специальном термопаке, который не дает мороженому растаять в пути и позволяет сохранить превосходный вкус.
 				</p>
 			</section>
+
 			<article class="news">
-				<h2>Новое в нашем блоге</h2>
-				<h1>10 способов сервировки фруктовых щербетов к столу</h1>
+				<h2 class="visually-hidden">Блог</h2>
+				<p>Новое в нашем блоге</p>
+				<h3 class="article-title">
+					<a href="#">10 способов сервировки<br>
+						фруктовых щербетов к<br>
+						столу</a>
+				</h3>
 			</article>
-			<div class="email">
-				<p>Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =) </p>
-				<p><input type="text"><input type="submit" value="Отправить"></p>
-			</div>
-			<section class="maps">
-				<img src="#" alt="Карта">
-				<div class="map-info">
-					<p>Адрес главного офиса
-					и офлайн магазина:</p>
-					<p>ул. Большая Конюшенная 19/8, Санкт-Петербург</p>
-					<p>Для заказов по телефону:</p>
-					<p>8 812 450-25-25
-					(с 10 до 20 ежедневно)</p>
-					<a class="btn" href="#">Форма обратной свзязи</a>
-				</div>
+
+			<section class="email">
+				<h2 class="visually-hidden">Подписка на рассылку</h2>
+				<p class="subscription-info">Подпишитесь на нашу сладкую рассылку и будете всегда в курсе самого вкусного, что у нас происходит. Обещаем не слать всякой ненужной ерунды. Честно =)</p>
+				<form class="email-form" action="index.html" method="post">
+					<label class="visually-hidden" for="email-sub">Электронная почта</label>
+					<input class="subscription-email" id="email-sub" type="email" name="email" placeholder="Электронная почта">
+					<button class="btn email-btn" type="submit">Отправить</button>
+				</form>
+			</section>
+
+			<section class="map">
+				<h2 class="visually-hidden">Наш адрес на карте</h2>
+				<img src="#" width="1200" height="430" alt="Карта с расположением магазина">
+			</section>
+
+			<section class="contacts">
+				<h2 class="visually-hidden">Контакты</h2>
+				<p>
+					Адрес главного офиса<br>
+					и офлайн магазина:
+					<b>ул. Большая Конюшенная<br>
+						19/8, Санкт-Петербург</b>
+				</p>
+				<p>
+					Для заказов по телефону:
+					<b>8 812 450-25-25</b>
+					(с 10 до 20 ежедневно)
+				</p>
+				<a class="button contacts-button" href="#">Форма обратной связи</a>
 			</section>
 		</main>
 
@@ -228,5 +249,25 @@
 				Сделано в <a href="https://htmlacademy.ru">HTML Academy</a> &copy; 2017
 			</div>
 		</footer>
+
+		<section class="modal modal-feedback">
+			<button class="modal-close" type="button">Закрыть</button>
+			<h2 class="feedback-heading">Мы обязательно вам ответим!</h2>
+			<form class="feedback-form" action="index.html" method="post">
+				<p>
+					<label class="visually-hidden" for="feedback-name">Имя</label>
+					<input class="feedback-name" id="feedback-name" type="text" name="name" placeholder="Как вас зовут?">
+				</p>
+				<p>
+					<label class="visually-hidden" for="feedback-email">Электронная почта</label>
+					<input class="feedback-email" id="feedback-email" type="email" name="email" placeholder="Ваша почта для ответа?">
+				</p>
+				<p>
+					<label class="visually-hidden" for="feedback-textarea-text">Написать дополнительную информацию</label>
+					<textarea class="feedback-textarea-text" id="feedback-textarea-text" name="textarea-text" rows="8" cols="50" placeholder="Напишите что-нибудь..."></textarea>
+				</p>
+				<button class="button feedback-button" type="submit">Отправить</button>
+			</form>
+		</section>
 	</body>
 </html>
