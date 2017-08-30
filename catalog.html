@@ -97,43 +97,54 @@
 
 		<main class="container">
 			<h1 class="page-title">Cливочное мороженое</h1>
-			<ul class="breadcrumbs">
-				<li><a href="index.html">Главная</a></li>
-				<li><a href="catalog.html">Каталог</a></li>
-				<li class="breadcrumbs-current">Сливочные</li>
-			</ul>
-			<h1 class="page-title">Сливочное мороженое</h1>
+
 			<section class="filters">
 				<h2 class="visually-hidden">Фильтр товаров</h2>
-				<form class="filter" method="get" action="#">
-					<p>Сортировка</p>
-					<select name="" id="">
-						<option value="популярность">по популярности</option>
-						<option value="названия">сначала недорогие</option>
-						<option value="что то">сначала дорогие</option>
-						<option value="что то">по жирности</option>
-					</select>
-					<div>
-						<p>Цена: 100 рубю. - 500 руб.</p>
-						Не знаю как ползунки пока размечать
-					</div>
-					<div>
-						<p>Жирность</p>
-						<input type="radio" name="fat"> 0%
-						<input type="radio" name="fat"> до 10%
-						<input type="radio" name="fat"> до 30%
-						<input type="radio" name="fat"> выше 30%
-					</div>
-					<div>
-						<p>Наполнители</p>
-						<input type="checkbox" name="filling"> шоколадная
-						<input type="checkbox" name="filling"> сахарные присыпки
-						<input type="checkbox" name="filling"> фрукты
-						<input type="checkbox" name="filling"> сиропы
-						<input type="checkbox" name="filling"> джемы
-
-						<input type="submit" value="Применить">
-					</div>
+				<form class="filter" action="" method="get">
+					<fieldset class="filter-sorting">
+						<legend>Сортировка:</legend>
+						<select class="filter-select" name="sorting">
+							<option value="popularity" selected>по популярности</option>
+							<option value="cheap-to-high">сначала недорогие</option>
+							<option value="high-to-cheap">сначала дорогие</option>
+							<option value="fat">по жирности</option>
+						</select>
+					</fieldset>
+					<fieldset class="filter-price">
+						<legend>Цена: 100 руб. &ndash; 500 руб.</legend>
+						<div class="filter-price-wrapper">
+							<input class="filter-range" type="range" name="price" min="0" max="700" step="10">
+						</div>
+					</fieldset>
+					<fieldset class="filter-fat">
+						<legend>Жирность:</legend>
+						<div class="filter-fat-wrapper">
+							<input class="filter-input filter-input-radio" type="radio" name="fat" id="no-fat" value="0">
+							<label class="filter-label" for="no-fat">0%</label>
+							<input class="filter-input filter-input-radio" type="radio" name="fat" id="10-fat" value="10" checked>
+							<label class="filter-label" for="10-fat">до 10%</label>
+							<input class="filter-input filter-input-radio" type="radio" name="fat"  id="30-fat" value="30">
+							<label class="filter-label" for="30-fat">до 30%</label>
+							<input class="filter-input filter-input-radio" type="radio" name="fat" id="very-fat" value="30-plus">
+							<label class="filter-label" for="very-fat">выше 30%</label>
+						</div>
+					</fieldset>
+					<fieldset class="filter-filler">
+						<legend>Наполнители:</legend>
+						<div class="filter-filler-wrapper">
+							<input class="filter-input filter-input-checkbox" type="checkbox" name="chocolate" id="chocolate" checked>
+							<label class="filter-label" for="chocolate">шоколадные</label>
+							<input class="filter-input filter-input-checkbox" type="checkbox" name="sugar" id="sugar" checked>
+							<label class="filter-label" for="sugar">сахарные присыпки</label>
+							<input class="filter-input filter-input-checkbox" type="checkbox" name="fruit" id="fruit">
+							<label class="filter-label" for="fruit">фрукты</label>
+							<input class="filter-input filter-input-checkbox" type="checkbox" name="syrup" id="syrup">
+							<label class="filter-label" for="syrup">сиропы</label>
+							<input class="filter-input filter-input-checkbox" type="checkbox" name="jam" id="jam">
+							<label class="filter-label" for="jam">джемы</label>
+						</div>
+					</fieldset>
+					<button class="button filter-button" type="submit" >Применить</button>
 				</form>
 			</section>
 
