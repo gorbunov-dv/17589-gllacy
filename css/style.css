@@ -7,3 +7,9 @@ body {
 
 	background-color: #849d8f;
 }
+
+.wrapper {
+	background-image: url(../img/special-offer-2.png);
+	background-position: top center;
+	background-repeat: no-repeat;
+}
