@@ -202,6 +202,7 @@ body > input[type="radio"] {
 .navigation-item > a {
   padding: 7px 12px;
   display: inline-block;
+  text-align: top;
 }
 
 .navigation-item > a:focus,
@@ -307,6 +308,7 @@ li[class^="header"] > a {
   background-color: rgba(255, 255, 255, 0.2);
   border-radius: 20px;
   display: inline-block;
+  text-align: top;
 }
 
 li[class^="header"] > a:hover,
@@ -712,6 +714,7 @@ input[type="email"]:focus,
 
 .slide-controls label {
   display: inline-block;
+  text-align: top;
   width: 21px;
   height: 21px;
   border-radius: 50%;
@@ -1477,6 +1480,7 @@ input[type="email"]:focus,
 
 .pagination-arrow-prev a {
   display: inline-block;
+  text-align: top;
   width: 18px;
   height: 26px;
   background: url("../img/icon-right-small.svg") no-repeat right center;
@@ -1487,6 +1491,7 @@ input[type="email"]:focus,
 
 .pagination-arrow-next a {
   display: inline-block;
+  text-align: top;
   width: 18px;
   height: 26px;
   background: url("../img/icon-right-small.svg") no-repeat right center;
@@ -1637,6 +1642,7 @@ input[type="email"]:focus,
 .footer-navigation-list a {
   color: #fff;
   display: inline-block;
+  text-align: top;
 }
 
 .footer-navigation-list a:hover,
@@ -1688,10 +1694,12 @@ input[type="email"]:focus,
 
 .footer-copyright span {
   display: inline-block;
+  text-align: top;
 }
 
 .feedback-text {
   display: inline-block;
+  text-align: top;
   font-size: 24px;
   line-height: 28px;
   font-weight: 500;
