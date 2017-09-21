@@ -737,6 +737,7 @@ input[type="email"]:focus,
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
+  flex-wrap: wrap;
   margin-bottom: 40px;
 }
 
@@ -746,6 +747,7 @@ input[type="email"]:focus,
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
+  flex-wrap: wrap;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
   -webkit-flex-direction: column;
